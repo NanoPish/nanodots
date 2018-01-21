@@ -13,4 +13,5 @@
 ## Getting Started
 - Install requirements
 - yadm clone https://github.com/NanoPish/nanodots.git
-- specify what greeter-session you want in /etc/lightdm/lightdm-gtk-greeter.conf (for example I use lightdm-mini-greeter)
+- change greeter-session=XXX to greeter-session=lightdm-mini-greeter in /etc/lightdm/lightdm.conf
+- change user=prikhi to user=yourusername in /etc/lightdm/lightdm-mini-greeter.conf
