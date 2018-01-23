@@ -137,20 +137,19 @@ bindsym Mod1+Shift+r restart
 ### DEFAULT I3 EXIT IS DISABLED
 #bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-### CUSTOM EXIT
-set $session "(E)xit (P)oweroff (R)eboot"
-mode  $session {
-         bindsym e exec $psst i3-msg exit; mode "default"
-         bindsym p exec $psst systemctl poweroff; mode "default"
-         bindsym r exec $psst systemctl reboot; mode "default"
+set $my_fancy_lock i3lock-fancy -p -t ""
 
-         bindsym q mode "default"
+### CUSTOM EXIT
+set $session "(E)xit (P)oweroff (R)eboot (H)ybrid"
+mode  $session {
+         bindsym e exec i3-msg exit; mode "default"
+         bindsym p exec systemctl poweroff; mode "default"
+         bindsym r exec systemctl reboot; mode "default"
+         bindsym h exec $my_fancy_lock; exec systemctl hybrid-sleep; mode "default"
          bindsym Escape mode "default"
 }
 
 bindsym Mod1+Shift+e mode $session 
-
-
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -179,7 +178,7 @@ mode "resize" {
 bindsym Mod1+r mode "resize"
 
 ### i3lock fancy instead of i3lock
-bindsym Mod1+Shift+x exec --no-startup-id i3lock-fancy -p -t ""
+bindsym Mod1+Shift+x exec --no-startup-id $my_fancy_lock
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -222,5 +221,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # keyboard layout
 exec --no-startup-id setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
 
-# startup layout
 # exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id firefox; workspace 2; exec --no-startup-id i3-sensible-terminal;'
+
+# redshift for eyes
+exec --no-startup-id exec redshift
