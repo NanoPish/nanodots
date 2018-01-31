@@ -135,10 +135,7 @@ bindsym Mod1+Shift+c reload
 bindsym Mod1+Shift+r restart
 # exit i3 (logs you out of your X session)
 
-### DEFAULT I3 EXIT IS DISABLED
-#bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-set $my_fancy_lock i3lock-fancy -p -t ""
+set $my_fancy_lock i31984
 
 ### CUSTOM EXIT
 set $session "(E)xit (P)oweroff (R)eboot (H)ybrid"
@@ -237,4 +234,4 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #567678
 client.background       #ffffff
 
 exec --no-startup-id unclutter
-exec --no-startup-id redshift
+exec --no-startup-id ~/.fehbg &
