@@ -22,10 +22,6 @@ URxvt.color13: #dc8cc3
 URxvt.color14: #93e0e3
 URxvt.color15: #ffffff
 
-URxvt.perl-ext-common:  default,matcher
-URxvt.url-launcher:     firefox
-URxvt.matcher.button:   3
-
 URxvt.scrollBar: false
 
 URxvt.font: xft:Droid Sans Mono:pixelsize=15:Regular
@@ -33,3 +29,7 @@ URxvt.boldFont: xft:Droid Sans Mono:pixelsize=15:Regular
 URxvt.italicFont: xft:Droid Sans Mono:pixelsize=15:Regular
 URxvt.boldItalicFont: xft:Droid Sans Mono:pixelsize=15:Regular
 URxvt.letterSpace: -1
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
