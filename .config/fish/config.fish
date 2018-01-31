@@ -1,0 +1,1 @@
+alias ne="emacs -nw"

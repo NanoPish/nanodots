@@ -235,3 +235,6 @@ client.urgent           #2f343a #900000 #ffffff #900000   #567678
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #567678
 
 client.background       #ffffff
+
+exec --no-startup-id unclutter
+exec --no-startup-id redshift

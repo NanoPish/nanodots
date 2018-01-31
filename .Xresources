@@ -28,4 +28,8 @@ URxvt.matcher.button:   3
 
 URxvt.scrollBar: false
 
-urxvt.font: xft:iosevka:pixelsize=16
+URxvt.font: xft:Droid Sans Mono:pixelsize=15:Regular
+URxvt.boldFont: xft:Droid Sans Mono:pixelsize=15:Regular
+URxvt.italicFont: xft:Droid Sans Mono:pixelsize=15:Regular
+URxvt.boldItalicFont: xft:Droid Sans Mono:pixelsize=15:Regular
+URxvt.letterSpace: -1
