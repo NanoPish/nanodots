@@ -27,3 +27,5 @@ URxvt.url-launcher:     firefox
 URxvt.matcher.button:   3
 
 URxvt.scrollBar: false
+
+urxvt.font: xft:iosevka:pixelsize=16
