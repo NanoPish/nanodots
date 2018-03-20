@@ -219,8 +219,6 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # keyboard layout
 exec --no-startup-id setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
 
-# exec --no-startup-id i3-msg 'workspace 1; exec --no-startup-id firefox; workspace 2; exec --no-startup-id i3-sensible-terminal;'
-
 # redshift for eyes
 exec --no-startup-id exec redshift
 
